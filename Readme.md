@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Виталий Шашков](https://up.htmlacademy.ru/adaptive-individual/1/user/1872141).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
 ---
 
