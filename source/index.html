@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>Кэт энерджи</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-header__logo-nav logo-nav-wrapper">
+        <div class="logo-nav-wrapper__logo logo">
+          <a class="logo__image-link" href="index.html">
+            <img class="logo__image" src="img/logo-image.svg" width="33" height="38" alt="Картинка логотипа компании">
+          </a>
+          <a class="logo__text-link" href="index.html">
+            <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Название компании">
+          </a>
+        </div>
+        <nav class="logo-nav-wrapper__nav navigation">
+          <button class="navigation__toggele" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <!--Не нравится мне второе имя класса которое придумал у списка, но мне же нужно показать, что этот список является элементом блока navigation и что он является отдельным блоком. Поэтому пока такие названия. Может вы поправите/посоветуете как изменить.-->
+          <ul class="navigation__list site-nav-list">
+            <li class="site-nav-list__item site-nav-list__item--active">
+              <a href="index.html">
+                главная
+              </a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="catalog.html">
+                каталог продукции
+              </a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="#">
+                подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-header__promo promo-wrapper">
+        <p class="promo-wrapper__intro">Функциональное питание для котов</p>
+        <p class="promo-wrapper__slogan">Занялся собой? Займись котом!</p>
+        <img class="promo-wrapper__image" src="img/header_promo.png" alt="Упаковка корма кэт энерджи с курицей">
+        <!--Я правильно понял, что при переключении между разными устройствами положение кнопки будет меняться наложение поверх изображения и дублировать её (как дублировали при вёрстке "Барбершопа") не нужно?-->
+        <a class="promo-wrapper__link" href="#">
+          подобрать программу
+        </a>
+      </div>
+    </header>
   </body>
 </html>
