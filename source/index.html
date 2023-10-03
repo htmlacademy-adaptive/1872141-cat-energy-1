@@ -104,7 +104,7 @@
         <!--Может тут лучше использовать заголовок h3?-->
         <p class="live-example__promo"><strong>Затраты на питание: 15 000 РУБ. </strong></p>
         <div class="live-example__slider-wrapper slider">
-          <!--Я же правильно понимаю, что в этом слайдере порядок сладдов фиксирован и важен? Или тут всё же использовать ненумерованный список?-->
+          <!--Я же правильно понимаю, что в этом слайдере порядок сладдов фиксирован и важен? Или тут всё же использовать ненумерованный?-->
           <ol class="slider__list">
             <li class="slider__item">
               <img class="slider__image_before" src="img/index/Fat-cat.png" width="280" height="256" alt="Толстый кот">
@@ -113,8 +113,17 @@
               <img class="slider__image_after" src="img/index/slim-cat.png" width="280" height="256" alt="Худой кот">
             </li>
           </ol>
+          <!--Данный слайдер переключается не кнопками, а ползунком... Нужно ли сейчас заниматься вёрсткой этого элемента, или работа со слайдером будет продолжена в следующих разделах?-->
         </div>
       </section>
+      <aside class="main-container__contacts contacts">
+        <div class="contacts__text-wrapper">
+          <p>приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <!--Предполагаю, что карта должа быть свёрстана при помощи другого тега. Если я прав, то подскажите, пожалуйста, про какие способы почитать...-->
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198189!2d30.320472477349337!3d59.938719162093555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1696352235508!5m2!1sru!2sru" width="768" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </aside>
     </main>
   </body>
 </html>
