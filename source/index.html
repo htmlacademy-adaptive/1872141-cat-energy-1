@@ -22,17 +22,17 @@
           <!--Не нравится мне второе имя класса которое придумал у списка, но мне же нужно показать, что этот список является элементом блока navigation и что он является отдельным блоком. Поэтому пока такие названия. Может вы поправите/посоветуете как изменить.-->
           <ul class="navigation__list site-nav-list">
             <li class="site-nav-list__item site-nav-list__item--active">
-              <a href="index.html">
+              <a class="site-nav-list__link" href="index.html">
                 главная
               </a>
             </li>
             <li class="site-nav-list__item">
-              <a href="catalog.html">
+              <a class="site-nav-list__link" href="catalog.html">
                 каталог продукции
               </a>
             </li>
             <li class="site-nav-list__item">
-              <a href="#">
+              <a class="site-nav-list__link" href="#">
                 подбор программы
               </a>
             </li>
@@ -42,12 +42,34 @@
       <div class="main-header__promo promo-wrapper">
         <p class="promo-wrapper__intro">Функциональное питание для котов</p>
         <p class="promo-wrapper__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo-wrapper__image" src="img/header_promo.png" alt="Упаковка корма кэт энерджи с курицей">
+        <img class="promo-wrapper__image" src="img/header_promo.png" width="280" height="270" alt="Упаковка корма кэт энерджи с курицей">
         <!--Я правильно понял, что при переключении между разными устройствами положение кнопки будет меняться наложение поверх изображения и дублировать её (как дублировали при вёрстке "Барбершопа") не нужно?-->
         <a class="promo-wrapper__link" href="#">
           подобрать программу
         </a>
       </div>
     </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Кэт энерджи - заботу о весе вашего любимца мы берём на себя.</h1>
+      <section class="main-container__about-weight">
+        <h2 class="visually-hidden">Что вы хотите для своего питомца?</h2>
+        <div class="main-container__about-weight__loss weight-loss">
+          <h3 class="weight-loss__title">похудение</h3>
+          <img class="weight-loss__image" src="img/silhouette-cat-slim.svg" width="36" height="50" alt="Силуэт сидящей египетской кошки в ошейнике">
+          <p class="weight-loss__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="weight-loss__link" href="#">
+            каталог slim
+          </a>
+        </div>
+        <div class="main-container__about-weight__gain weight-gain">
+          <h3 class="weight-gain__title">Набор массы</h3>
+          <img class="weight-gain__image" src="img/silhouette-panther.svg" width="67" height="28" alt="Силуэт идущей пантеры">
+          <p class="weight-gain__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="weight-gain__link" href="#">
+            каталог pro
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
