@@ -41,9 +41,104 @@
         </nav>
       </div>
     </header>
+    <!--Возможно нет смысла на каждую страницу задавать разные классы для main. Пока назвал их по-разному, если в процессе вёрстки страниц не будет различий для main, то название класса будет одинаковым для всех страниц...-->
     <main class="form-main-container">
       <h1 class="visually-hidden">Кэт энерджи - заботу о весе вашего любимца мы берём на себя.</h1>
-
+      <h2 class="form-main-container__title">Подбор программы</h2>
+      <p class="form-main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <!--Не нашёл в описании задания и критериях заполнение для action, поэтому взял эту информацию из предыдущего курса.-->
+      <form class="form-main-container__order-form order-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="order-form__about-cat cat-information">
+          <label class="cat-information__name">
+            ИМЯ:*
+            <input class="cat-information__name-input" type="text" name="cat-name" placeholder="барсик" required>
+          </label>
+          <label class="cat-information__weight">
+            Вес (кг):*
+            <input class="cat-information__weight-input" type="text" name="cat-weight" placeholder="7" required>
+          </label>
+          <label class="cat-information__age">
+            Возраст (лет):
+            <input class="cat-information__age-input" type="text" name="cat-age" placeholder="7" required>
+          </label>
+        </div>
+        <ul class="order-form__programs desired-program-list">
+          <li class="desired-program-list__item">
+            <label class="desired-program-list__label">
+              <input class="visually-hidden desired-program-list__input" type="radio" name="desired-program" value="selected" checked>
+              <span class="control_mark"></span>
+              <span class="control_label">похудение</span>
+            </label>
+          </li>
+          <li class="desired-program-list__item">
+            <label class="desired-program-list__label">
+              <input class="visually-hidden desired-program-list__input" type="radio" name="desired-program" value="not-selected">
+              <span class="control_mark"></span>
+              <span class="control_label">Набор массы</span>
+            </label>
+          </li>
+          <li class="desired-program-list__item">
+            <label class="desired-program-list__label">
+              <input class="visually-hidden desired-program-list__input" type="radio" name="desired-program" value="not-selected">
+              <span class="control_mark"></span>
+              <span class="control_label">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </li>
+        </ul>
+        <div class="order-form__about-owner owner-information">
+          <!--У нас в макете 3 одинаковых по оформлению элемента отличаются только текстом...
+            Я дал им разные классы, чтобы обозначить, что они являются элементами разных блоков и добавил общий класс для стилизации.
+            Правильно ли так делать? Может какой-то класс лишний? Может ка-то по-другому дать названия классам?-->
+          <h3 class="owner-information__title order-form__subtitle">Контактные данные (владельца кота)</h3>
+          <label class="owner-information__email">
+            E-mail:*
+            <input class="owner-information__email-input" type="text" name="owner-email" placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label class="owner-information__phone-number">
+            Телефон:*
+            <input class="owner-information__phone-number-input" type="text" name="owner-phone-number" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </div>
+        <div class="order-form__comment comment-wrapper">
+          <h3 class="comment-wrapper__title order-form__subtitle">Комментарий</h3>
+          <textarea name="comment-text" cols="30" rows="5" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        </div>
+        <div class="order-form__optionally optionally-wrapper">
+          <h3 class="optionally-wrapper__title order-form__subtitle">Дополнительно</h3>
+          <ul class="optionally-wrapper__list optionally-list">
+            <li class="optionally-list__item">
+              <label class="optionally-list__label">
+                <input class="visually-hidden optionally-list__input" type="checkbox" name="sweetener" checked>
+                <span class="control_mark"></span>
+                <span class="control_label">сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="optionally-list__item">
+              <label class="optionally-list__label">
+                <input class="visually-hidden optionally-list__input" type="checkbox" name="water">
+                <span class="control_mark"></span>
+                <span class="control_label">питьевая вода</span>
+              </label>
+            </li>
+            <li class="optionally-list__item">
+              <label class="optionally-list__label">
+                <input class="visually-hidden optionally-list__input" type="checkbox" name="milk">
+                <span class="control_mark"></span>
+                <span class="control_label">молоко</span>
+              </label>
+            </li>
+            <li class="optionally-list__item">
+              <label class="optionally-list__label">
+                <input class="visually-hidden optionally-list__input" type="checkbox" name="vitamins">
+                <span class="control_mark"></span>
+                <span class="control_label">витамины</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <button class="order-form__button" type="submit">отправить заявку</button>
+        <p class="order-form__note">* — Обязательные поля</p>
+      </form>
       <aside class="main-container__contacts contacts">
         <h2 class="visually-hidden">Как нас найти?</h2>
         <div class="contacts__text-wrapper">
