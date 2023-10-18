@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Кэт энерджи</title>
+    <base href="https://htmlacademy-adaptive.github.io/1872141-cat-energy-1/2/">
+</head>
+  <body class="page__body">
+    <h1 class="visually-hidden">У нас широкий выбор товаров питания для животных.</h1>
+    <header class="main-header">
+      <div class="main-header__logo-nav logo-nav-wrapper">
+        <div class="logo-nav-wrapper__logo logo">
+          <a class="logo__image-link" href="index.html">
+            <img class="logo__image" src="img/index/logo-image.svg" width="33" height="38" alt="Картинка логотипа компании">
+          </a>
+          <a class="logo__text-link" href="index.html">
+            <img class="logo__text" src="img/index/logo-text.svg" width="101" height="18" alt="Название компании">
+          </a>
+        </div>
+        <nav class="logo-nav-wrapper__nav navigation">
+          <button class="navigation__toggele" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <!--Не нравится мне второе имя класса которое придумал у списка, но мне же нужно показать, что этот список является элементом блока navigation и что он является отдельным блоком. Поэтому пока такие названия. Может вы поправите/посоветуете как изменить.-->
+          <ul class="navigation__list site-nav-list">
+            <li class="site-nav-list__item site-nav-list__item--active">
+              <a class="site-nav-list__link" href="index.html">
+                главная
+              </a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link" href="catalog.html">
+                каталог продукции
+              </a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link" href="form.html">
+                подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-header__promo promo-wrapper">
+        <p class="promo-wrapper__intro">Функциональное питание для котов</p>
+        <p class="promo-wrapper__slogan">Занялся собой? Займись котом!</p>
+        <img class="promo-wrapper__image" src="img/index/header-promo.png" width="280" height="270" alt="Упаковка корма кэт энерджи с курицей">
+        <!--Я правильно понял, что при переключении между разными устройствами положение кнопки будет меняться наложение поверх изображения и дублировать её (как дублировали при вёрстке "Барбершопа") не нужно?-->
+        <a class="promo-wrapper__link" href="form.html">
+          подобрать программу
+        </a>
+      </div>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Кэт энерджи - заботу о весе вашего любимца мы берём на себя.</h1>
+      <section class="main-container__about-weight servic">
+        <h2 class="visually-hidden">Что вы хотите для своего питомца?</h2>
+        <div class="servic__weight-loss weight-loss">
+          <h3 class="weight-loss__title">похудение</h3>
+          <img class="weight-loss__image" src="img/index/silhouette-cat-slim.svg" width="36" height="50" alt="Силуэт сидящей египетской кошки в ошейнике">
+          <p class="weight-loss__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="weight-loss__link" href="catalog.html">
+            каталог slim
+          </a>
+        </div>
+        <div class="servic__weight-gain weight-gain">
+          <h3 class="weight-gain__title">Набор массы</h3>
+          <img class="weight-gain__image" src="img/index/silhouette-panther.svg" width="67" height="28" alt="Силуэт идущей пантеры">
+          <p class="weight-gain__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="weight-gain__link" href="catalog.html">
+            каталог pro
+          </a>
+        </div>
+      </section>
+      <!--Неуверен на счёт правильного выбора тега... Возможно тут использовать тег article? По идее этот блок можно на любую другую страницу поместить, но тогда не сосвсем будет понятен смысл текста. Другими словами блок относительно независим от остального наполнения страницы.-->
+      <article class="main-container__how-it-works how-it-works">
+        <h2 class="how-it-works__title">Как это работает</h2>
+        <ol class="how-it-works__list">
+          <li class="how-it-works__item">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="how-it-works__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="how-it-works__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="how-it-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+        </ol>
+      </article>
+      <section class="main-container__live-example live-example">
+        <h2 class="live-example__title">Живой пример</h2>
+        <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <dl class="live-example__list service-result-list">
+          <div class="service-result-list__item">
+            <dt class="service-result-list_benefit">
+              5 КГ
+            </dt>
+            <dd class="service-result-list__description">
+              снижение веса
+            </dd>
+          </div>
+          <div class="service-result-list__item">
+            <dt class="service-result-list__benefit">
+              60 ДНЕЙ
+            </dt>
+            <dd class="service-result-list__description">
+              затрачено времени
+            </dd>
+          </div>
+        </dl>
+        <!--Может тут лучше использовать заголовок h3?-->
+        <p class="live-example__promo"><strong>Затраты на питание: 15 000 РУБ. </strong></p>
+        <div class="live-example__slider-wrapper slider">
+          <!--Я же правильно понимаю, что в этом слайдере порядок сладдов фиксирован и важен? Или тут всё же использовать ненумерованный?-->
+          <ol class="slider__list">
+            <li class="slider__item">
+              <img class="slider__image_before" src="img/index/Fat-cat.png" width="280" height="256" alt="Толстый кот">
+            </li>
+            <li class="slider__item">
+              <img class="slider__image_after" src="img/index/slim-cat.png" width="280" height="256" alt="Худой кот">
+            </li>
+          </ol>
+          <!--Данный слайдер переключается не кнопками, а ползунком... Нужно ли сейчас заниматься вёрсткой этого элемента, или работа со слайдером будет продолжена в следующих разделах?-->
+        </div>
+      </section>
+      <aside class="main-container__contacts contacts">
+        <h2 class="visually-hidden">Как нас найти?</h2>
+        <div class="contacts__text-wrapper">
+          <p>приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <!--Предполагаю, что карта должа быть свёрстана при помощи другого тега. Если я прав, то подскажите, пожалуйста, про какие способы почитать...-->
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198189!2d30.320472477349337!3d59.938719162093555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1696352235508!5m2!1sru!2sru" width="768" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </aside>
+    </main>
+    <footer class="mail-footer">
+      <a class="main-footer__logo-link" href="index.html">
+        <img class="main-footer__logo-image" src="img/index/logo-text.svg" width="128" height="24" alt="Название компании">
+      </a>
+      <div class="mail-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__logo-text-link" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+        <a class="copyright__logo-image-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__htmlacademy-logo" src="img/index/htmlacademy-logo.svg" alt="Логотип HTMLacademy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
