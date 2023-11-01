@@ -1,1 +1,51 @@
-// Начните писать стили здесь
+/*Подключаем шрифты*/
+@font-face {
+  font-family: "lato", sans-serif;
+  src: url("/source/fonts/lato/lato-regular.woff2") format("woff2"), url("/source/fonts/lato/lato-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*В папке со шрифтами есть ещё один из семейства oswald, но я не нашёл нигде в макете где бы применялся шрифт oswald medium(500). Это ошибка макета, или лишний шрифт в папке?*/
+
+@font-face {
+  font-family: "oswald", sans-serif;
+  src: url("/source/fonts/oswald/oswaldregular.woff2") format("woff2"), url("/source/fonts/oswald/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Базовая стилизация крупных блоков*/
+.page {
+  width: 100%;
+}
+
+.page__body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  color: #444444;
+  background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page__body--index {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page__body--catalog {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.page__body--form {
+  font-family: "oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-footer {
+  background-color: #f2f2f2;
+}
